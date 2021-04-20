@@ -92,25 +92,25 @@ const getWeather = async (city) => {
     humidityValue.textContent = Math.round(humidity);
     windValue.textContent = Math.round(3.6 * speed);
     if (id < 300 && id >= 200) {
-      tempicon.src = "http://openweathermap.org/img/wn/11d@2x.png";
+      tempicon.src = "https://openweathermap.org/img/wn/11d@2x.png";
     } else if (id >= 300 && id < 400) {
-      tempicon.src = "http://openweathermap.org/img/wn/09d@2x.png";
+      tempicon.src = "https://openweathermap.org/img/wn/09d@2x.png";
     } else if (id >= 500 && id < 600) {
-      tempicon.src = "http://openweathermap.org/img/wn/10d@2x.png";
+      tempicon.src = "https://openweathermap.org/img/wn/10d@2x.png";
     } else if (id >= 600 && id < 700) {
-      tempicon.src = "http://openweathermap.org/img/wn/13d@2x.png";
+      tempicon.src = "https://openweathermap.org/img/wn/13d@2x.png";
     } else if (id >= 700 && id < 800) {
-      tempicon.src = "http://openweathermap.org/img/wn/50d@2x.png";
+      tempicon.src = "https://openweathermap.org/img/wn/50d@2x.png";
     } else if (id == 800) {
-      tempicon.src = " http://openweathermap.org/img/wn/01d@2x.png";
+      tempicon.src = " https://openweathermap.org/img/wn/01d@2x.png";
     } else if (id == 801) {
-      tempicon.src = " http://openweathermap.org/img/wn/02d@2x.png";
+      tempicon.src = " https://openweathermap.org/img/wn/02d@2x.png";
     } else if (id == 802) {
-      tempicon.src = " http://openweathermap.org/img/wn/03d@2x.png";
+      tempicon.src = " https://openweathermap.org/img/wn/03d@2x.png";
     } else if (id == 803) {
-      tempicon.src = " http://openweathermap.org/img/wn/04d@2x.png";
+      tempicon.src = " https://openweathermap.org/img/wn/04d@2x.png";
     } else if (id == 804) {
-      tempicon.src = " http://openweathermap.org/img/wn/04d@2x.png";
+      tempicon.src = " https://openweathermap.org/img/wn/04d@2x.png";
     }
   } catch (error) {
     alert("city not found");
@@ -152,25 +152,25 @@ window.addEventListener("load", () => {
           humidityValue.textContent = Math.round(humidity);
           windValue.textContent = Math.round(3.6 * speed);
           if (id < 300 && id >= 200) {
-            tempicon.src = "http://openweathermap.org/img/wn/11d@2x.png";
+            tempicon.src = "https://openweathermap.org/img/wn/11d@2x.png";
           } else if (id >= 300 && id < 400) {
-            tempicon.src = "http://openweathermap.org/img/wn/09d@2x.png";
+            tempicon.src = "https://openweathermap.org/img/wn/09d@2x.png";
           } else if (id >= 500 && id < 600) {
-            tempicon.src = "http://openweathermap.org/img/wn/10d@2x.png";
+            tempicon.src = "https://openweathermap.org/img/wn/10d@2x.png";
           } else if (id >= 600 && id < 700) {
-            tempicon.src = "http://openweathermap.org/img/wn/13d@2x.png";
+            tempicon.src = "https://openweathermap.org/img/wn/13d@2x.png";
           } else if (id >= 700 && id < 800) {
-            tempicon.src = "http://openweathermap.org/img/wn/50d@2x.png";
+            tempicon.src = "https://openweathermap.org/img/wn/50d@2x.png";
           } else if (id == 800) {
-            tempicon.src = " http://openweathermap.org/img/wn/01d@2x.png";
+            tempicon.src = " https://openweathermap.org/img/wn/01d@2x.png";
           } else if (id == 801) {
-            tempicon.src = " http://openweathermap.org/img/wn/02d@2x.png";
+            tempicon.src = " https://openweathermap.org/img/wn/02d@2x.png";
           } else if (id == 802) {
-            tempicon.src = " http://openweathermap.org/img/wn/03d@2x.png";
+            tempicon.src = " https://openweathermap.org/img/wn/03d@2x.png";
           } else if (id == 803) {
-            tempicon.src = " http://openweathermap.org/img/wn/04d@2x.png";
+            tempicon.src = " https://openweathermap.org/img/wn/04d@2x.png";
           } else if (id == 804) {
-            tempicon.src = " http://openweathermap.org/img/wn/04d@2x.png";
+            tempicon.src = " https://openweathermap.org/img/wn/04d@2x.png";
           }
           console.log(data);
         });

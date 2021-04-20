@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #363636;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  align-content: center;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Aclonica", sans-serif;
+  text-align: center;
+  color: #f98f54;
+  padding: 1%;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-button {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 11px;
+  border: 2px solid #494949;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+#search-button:hover {
+  color: #ffffff;
+  background: #ff6768;
+  border-color: #ff6768;
+  transition: all 0.4s ease 0s;
+}
+
+#search-input {
+  width: 260px;
+  overflow: hidden;
+  font-size: 20px;
+  margin: 8px 0;
+  padding: 8px 0;
+  border-bottom: 3px solid #f98f54;
+  color: white;
+  outline: none;
+  background: none;
+}
+input {
+  border: none;
+}
+
+#weatherSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: left;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(0, 86, 77);
+  border-radius: 20px;
+  width: 360px;
+  height: 360px;
+  margin-left: 30%;
+  display: block;
+  box-shadow: 10px 10px 20px 10px rgba(0, 86, 77, 0.2);
+  /* font-size: 2.5rem; */
+  color: #ffffff;
+  text-align: left;
+}
+
+/* #temp {
+  text-align: left;
+} */
+
+#temp-icon {
+  /* margin: 1rem; */
+  margin: 10px 0;
+  width: 40%;
+  height: auto;
+}
+
+.info-side {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  background-color: rgb(0, 137, 123);
+  box-shadow: 0 0 50px -5px rgba(0, 137, 123, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+}
+.info-side .title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+#climate {
+  font-size: medium;
+  font-weight: lighter;
+}
+.maxTemp .title {
+  margin-right: 121px;
+}
+.minTemp .title {
+  margin-right: 124px;
+}
+
+.humidity .title {
+  margin-right: 81px;
+}
+.wind .title {
+  margin-right: 115px;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 40px;
+  max-height: 70px;
+}
+
+.content {
+  position: relative;
+  height: 10vh;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+}
